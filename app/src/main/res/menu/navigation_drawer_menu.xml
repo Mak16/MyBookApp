@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/main_topic"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:title="Cooking"
+            android:id="@+id/cooking"/>
+        <item
+            android:title="Sports"
+            android:id="@+id/sports"/>
+            android:id="@+id/stu"/>
+
+        <item
+            android:title="Technologies"
+            android:id="@+id/technologies"/>
+        <item
+            android:title="Automobiles"
+            android:id="@+id/automobiles"/>
+        <item
+            android:title="Science"
+            android:id="@+id/science"/>
+        <item
+            android:title="Programming"
+            android:id="@+id/programming" />
+    </group>
+</menu>

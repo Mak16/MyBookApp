@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahi.books.SearchActivity"
+    android:background="#605f5f">
+
+    <TextView
+        android:id="@+id/search_activity_heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Search Book"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/pb_title_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Insert Subject"
+        android:inputType="textPersonName"
+        android:textColor="#d4faeb"
+        android:textColorHint="#b6b5b5"
+        app:layout_constraintBottom_toTopOf="@+id/etTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_activity_heading" />
+
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Insert Title"
+        android:inputType="textPersonName"
+        android:textColor="#d4faeb"
+        android:textColorHint="#b6b5b5"
+        app:layout_constraintBottom_toTopOf="@+id/etAuthor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSubject" />
+
+    <EditText
+        android:id="@+id/etAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Insert Author"
+        android:inputType="textPersonName"
+        android:textColor="#d4faeb"
+        android:textColorHint="#b6b5b5"
+        app:layout_constraintBottom_toTopOf="@+id/etPublisher"
+        app:layout_constraintEnd_toEndOf="@+id/etTitle"
+        app:layout_constraintStart_toStartOf="@+id/etTitle"
+        app:layout_constraintTop_toBottomOf="@+id/etTitle" />
+
+    <EditText
+        android:id="@+id/etPublisher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Insert Publisher"
+        android:inputType="textPersonName"
+        android:textColor="#d4faeb"
+        android:textColorHint="#b6b5b5"
+        app:layout_constraintBottom_toTopOf="@+id/etIsbn"
+        app:layout_constraintEnd_toEndOf="@+id/etAuthor"
+        app:layout_constraintStart_toStartOf="@+id/etAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/etAuthor" />
+
+    <EditText
+        android:id="@+id/etIsbn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Insert ISBN"
+        android:inputType="textPersonName"
+        android:textColor="#d4faeb"
+        android:textColorHint="#b6b5b5"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintEnd_toEndOf="@+id/etPublisher"
+        app:layout_constraintStart_toStartOf="@+id/etPublisher"
+        app:layout_constraintTop_toBottomOf="@+id/etPublisher" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_state"
+        android:fontFamily="monospace"
+        android:text="Search"
+        android:textColor="#706f6f"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etIsbn"
+        app:layout_constraintStart_toStartOf="@+id/etIsbn"
+        app:layout_constraintTop_toBottomOf="@+id/etIsbn"
+        android:layout_marginRight="8dp"
+        android:soundEffectsEnabled="true"
+        android:clickable="true"/>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

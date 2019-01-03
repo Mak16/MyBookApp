@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#f5f5f5</item>
+        <item name="colorPrimaryDark">#f44242</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:panelColorBackground">#fffefe</item>
+        <item name="android:colorBackground">#fff</item>
+
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@android:transition/slide_left</item>
+        <item name="android:windowExitTransition">@android:transition/slide_right</item>
+
+    </style>
+
+</resources>
